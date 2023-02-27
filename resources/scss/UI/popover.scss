@@ -1,0 +1,18 @@
+.popover-icon {
+    @apply ml-1 text-lg text-customGray-600 dark:text-customGray-500 max-sm:text-sm;
+}
+
+.popover {
+    @apply z-10 inline-block w-60 rounded-md bg-customGray-200 text-xs text-customGray-600 transition-opacity dark:bg-customPink-300  dark:text-customGray-500;
+
+    // .popover__wrapper
+
+    &__wrapper {
+        @apply p-4;
+    }
+
+    // .popover__text
+
+    &__text {
+    }
+}

@@ -1,0 +1,30 @@
+.stepper {
+    @apply relative mx-auto max-w-[212px] after:absolute after:inset-x-0 after:top-1/2 after:block after:h-0.5 after:-translate-y-1/2 after:bg-customGray-400 dark:after:bg-customPink-100;
+    // .stepper__list
+
+    &__list {
+        @apply relative z-10 flex justify-between text-lg font-bold text-customGray-600;
+    }
+
+    // .stepper__item
+
+    &__item {
+        @apply flex items-center;
+
+        &:not(:first-child) {
+            @apply w-full border-transparent before:inline-block before:h-0.5 before:w-full before:content-[''];
+        }
+        &.active {
+            @apply before:bg-primary;
+
+            .stepper__text {
+                @apply bg-primary text-customGray-50;
+            }
+        }
+    }
+
+    // .stepper__text
+    &__text {
+        @apply text-secondary flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-customGray-200 text-center dark:bg-customPink-200;
+    }
+}

@@ -1,0 +1,31 @@
+.file-upload {
+    @apply relative flex h-full w-full flex-col rounded-xl;
+    // .file-upload__label
+
+    &__label {
+        @apply flex h-full w-full cursor-pointer flex-col items-center justify-center bg-customGray-200 transition-colors hover:bg-customGray-100 dark:bg-customPink-300 dark:hover:bg-customPink-200;
+    }
+
+    // .file-upload__wrapper
+
+    &__wrapper {
+        @apply flex flex-col items-center justify-center p-6 max-sm:p-3;
+    }
+
+    // .file-upload__icon
+
+    &__icon {
+        @apply mb-4 text-6xl text-customGray-400 dark:text-customPink-100 max-sm:mb-2 max-sm:text-5xl;
+    }
+
+    // .file-upload__text
+
+    &__text {
+        @apply mb-2 text-center text-sm last:mb-0 max-sm:mb-1 max-sm:text-xs;
+    }
+
+    // .file-upload__info
+
+    &__info {
+    }
+}

@@ -1,0 +1,201 @@
+.podcast {
+    @apply pt-20 pb-32 max-lg:pb-24 max-lg:pt-16 max-sm:pt-10;
+    // .podcast__container
+
+    &__container {
+    }
+
+    // .podcast__wrapper
+
+    &__wrapper {
+    }
+
+    // .podcast__header
+
+    &__header {
+        @apply mb-24 max-lg:mb-16 max-sm:mb-12;
+    }
+
+    // .podcast__button
+
+    &__button {
+    }
+
+    // .podcast__body
+
+    &__body {
+        @apply flex justify-between gap-10 max-lg:flex-col;
+    }
+
+    // .podcast__col
+
+    &__col {
+        @apply w-full max-w-[800px] max-lg:max-w-full;
+    }
+}
+
+.podcast-content {
+    // .podcast-content__wrapper
+
+    &__wrapper {
+    }
+
+    // .podcast-content__data
+
+    &__data {
+        @apply mb-8 max-sm:mb-4;
+    }
+
+    // .podcast-content__player
+
+    &__player {
+        @apply mb-10 max-sm:mb-4;
+    }
+
+    // .podcast-content__info
+
+    &__info {
+    }
+}
+.podcast-data {
+    // .podcast-data__creator
+
+    &__creator {
+        @apply mb-4 text-2xl max-lg:mb-3 max-lg:text-xl max-sm:mb-2 max-sm:text-base;
+    }
+
+    // .podcast-data__title
+
+    &__title {
+        @apply mb-4 font-secondary text-6xl max-lg:mb-3 max-lg:text-4xl max-sm:mb-2 max-sm:text-2xl;
+    }
+
+    // .podcast-data__text
+
+    &__text {
+        @apply text-secondary text-xl leading-loose  max-lg:text-lg max-sm:text-sm;
+    }
+}
+
+.podcast-player {
+    // .podcast-player__wrapper
+
+    &__wrapper {
+    }
+
+    // .podcast-player__image
+
+    &__image {
+        @apply mb-8 aspect-square w-full overflow-hidden rounded-3xl max-lg:mb-6 max-lg:rounded-2xl max-sm:mb-4 max-sm:rounded-xl;
+    }
+
+    // .podcast-player__audio
+
+    &__audio {
+    }
+}
+
+.podcast-info {
+    // .podcast-info__wrapper
+
+    &__wrapper {
+    }
+
+    // .podcast-info__categories
+
+    &__categories {
+        @apply mb-10 max-lg:mb-8 max-sm:mb-5;
+    }
+
+    // .podcast-info__purchase
+
+    &__purchase {
+        @apply mb-9;
+    }
+
+    // .podcast-info__actions
+
+    &__actions {
+        @apply flex gap-7 max-lg:justify-end max-lg:gap-5 max-sm:gap-3;
+    }
+
+    // .podcast-info__button
+
+    &__button {
+    }
+}
+.podcast-categories {
+    @apply flex gap-5 max-lg:flex-col;
+    // .podcast-categories__item
+
+    &__item {
+        @apply basis-1/2 max-lg:basis-full;
+    }
+}
+.podcast-category {
+    // .podcast-category__wrapper
+
+    &__wrapper {
+    }
+
+    // .podcast-category__title
+
+    &__title {
+        @apply mb-5 text-4xl font-semibold max-lg:mb-3 max-lg:text-3xl max-sm:mb-2 max-sm:text-xl;
+    }
+
+    // .podcast-category__body
+
+    &__body {
+        .category {
+            // .category__list
+
+            &__list {
+                @apply gap-4 max-lg:gap-2;
+            }
+
+            // .category__link
+
+            &__link {
+                @apply text-base max-sm:text-xs;
+            }
+        }
+    }
+}
+.podcast-purchase {
+    @apply flex justify-between border-b border-customGray-400 py-7 text-6xl font-semibold dark:border-customPink-100;
+    @apply max-lg:py-4 max-lg:text-5xl max-sm:py-3 max-sm:text-3xl;
+    // .podcast-purchase__title
+
+    &__title {
+    }
+
+    // .podcast-purchase__price
+
+    &__price {
+    }
+}
+
+.podcast-more {
+    // .podcast-more__wrapper
+
+    &__wrapper {
+    }
+
+    // .podcast-more__title
+
+    &__title {
+        @apply mb-10 text-4xl font-extrabold max-lg:mb-8 max-lg:text-3xl max-sm:mb-5 max-sm:text-2xl;
+    }
+
+    // .podcast-more__col
+
+    &__col {
+        @apply flex flex-col gap-7 max-lg:gap-6 max-sm:gap-4;
+    }
+
+    // .podcast-more__item
+
+    &__item {
+    }
+}

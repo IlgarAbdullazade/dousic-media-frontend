@@ -1,0 +1,30 @@
+.footer {
+    @apply mt-10 w-full bg-customGray-200 dark:bg-customPink-300;
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__wrapper
+
+    &__wrapper {
+        @apply text-secondary flex items-center justify-between gap-10 py-5 text-base max-lg:text-sm max-sm:flex-col-reverse max-sm:gap-1 max-sm:pt-2;
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+    }
+
+    // .footer__nav
+
+    &__nav {
+        @apply flex;
+    }
+
+    // .footer__link
+
+    &__link {
+        @apply inline-block p-6 transition-colors hover:text-customGray-700 dark:hover:text-customGray-50 max-lg:p-3;
+    }
+}

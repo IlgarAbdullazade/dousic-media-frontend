@@ -1,0 +1,100 @@
+.sidebar-user {
+    @apply -mx-5 h-full px-5 pb-9 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary;
+    @apply max-lg:m-0 max-lg:p-0;
+
+    // .sidebar-user__wrapper
+
+    &__wrapper {
+        @apply flex flex-col items-center gap-8;
+        @apply max-lg:items-start max-lg:gap-5 max-lg:p-5 max-sm:p-4;
+    }
+
+    // .sidebar-user__info
+
+    &__info {
+    }
+
+    // .sidebar-user__description
+
+    &__description {
+    }
+
+    // .sidebar-user__interests
+
+    &__interests {
+    }
+}
+
+.user-info {
+    // .user-info__wrapper
+
+    &__wrapper {
+        @apply flex flex-col items-center gap-3 text-center  max-lg:items-start max-lg:gap-2  max-lg:pt-32 max-lg:text-left max-sm:pt-20;
+    }
+
+    // .user-info__image
+
+    &__image {
+        @apply mb-10 aspect-square w-60 transform overflow-hidden rounded-3xl max-lg:absolute max-lg:-top-[112px] max-lg:mb-0 max-lg:w-56 max-sm:-top-[72px] max-sm:w-36;
+    }
+
+    // .user-info__name
+
+    &__name {
+        @apply font-secondary text-3xl max-lg:text-2xl max-sm:text-xl;
+    }
+
+    // .user-info__caption
+
+    &__caption {
+        @apply max-lg:text-base max-sm:text-sm;
+    }
+
+    // .user-info__slug
+
+    &__slug {
+        @apply text-sm max-sm:text-xs lg:leading-loose;
+    }
+
+    // .user-info__address
+
+    &__address {
+        @apply text-sm max-sm:text-xs lg:leading-loose;
+    }
+}
+
+.user-description {
+    @apply flex flex-col items-center text-center  max-lg:items-start max-lg:text-left;
+
+    // .user-description__title
+
+    &__title {
+        @apply mb-2 max-sm:text-sm;
+    }
+
+    // .user-description__text
+
+    &__text {
+        @apply text-secondary text-sm leading-loose max-lg:leading-loose max-sm:text-xs;
+    }
+}
+
+.user-interests {
+    @apply flex flex-col items-center max-lg:items-start max-lg:text-left;
+    // .user-interests__title
+
+    &__title {
+        @apply mb-3 text-center max-sm:text-sm;
+    }
+
+    // .user-interests__content
+
+    &__content {
+        @apply flex flex-wrap gap-x-2 gap-y-3;
+    }
+
+    // .user-interests__item
+
+    &__item {
+    }
+}

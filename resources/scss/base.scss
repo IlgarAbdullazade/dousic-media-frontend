@@ -1,0 +1,52 @@
+html,
+body {
+    @apply h-full min-w-[360px];
+}
+
+body {
+    @apply bg-customGray-200 font-primary text-base font-normal text-customGray-700 antialiased scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary dark:bg-customPink-500 dark:text-customGray-50;
+    .lock & {
+        @apply touch-none overflow-hidden overscroll-none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-bold;
+}
+
+[class*="-ibg"] {
+    @apply relative;
+    img {
+        @apply absolute top-0 left-0 h-full w-full object-cover;
+    }
+}
+[class*="-ibg-contain"] {
+    img {
+        @apply absolute top-0 left-0 h-full w-full object-contain;
+    }
+}
+
+.wrapper {
+    @apply relative flex min-h-full flex-col overflow-hidden;
+
+    > main {
+        @apply flex-auto;
+    }
+
+    > * {
+        @apply min-w-0;
+    }
+}
+
+.page {
+    @apply pt-24 max-lg:pt-20 max-sm:pt-16;
+}
+
+[class*="__container"] {
+    @apply mx-auto max-w-[1764px] px-8 max-sm:px-5;
+}

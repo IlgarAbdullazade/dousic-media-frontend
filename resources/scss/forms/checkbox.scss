@@ -1,0 +1,14 @@
+.checkbox {
+    @apply flex items-center gap-2;
+    // .form-checkbox__input
+
+    &__input {
+        @apply h-4 w-4 rounded border-primary text-primary focus:ring-primary;
+    }
+
+    // .form-checkbox__label
+
+    &__label {
+        @apply text-secondary text-xs;
+    }
+}

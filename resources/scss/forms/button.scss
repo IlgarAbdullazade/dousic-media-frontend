@@ -1,0 +1,39 @@
+.button {
+    @apply inline-flex min-w-[130px] items-center justify-center rounded-full border border-solid py-3 px-6 text-center transition-colors;
+    @apply max-lg:px-4 max-lg:py-2.5 max-lg:text-sm max-sm:px-2.5 max-sm:py-2 max-sm:text-xs;
+
+    &.primary {
+        @apply border-primary bg-primary text-customGray-50 hover:bg-customPink-100;
+    }
+
+    &.secondary {
+        @apply text-secondary border-customGray-400 bg-customGray-100 dark:border-customPink-100 dark:bg-customPink-300;
+
+        &:hover {
+            @apply border-customPink-100 bg-customPink-300 text-customGray-500 dark:border-customGray-400 dark:bg-customGray-100 dark:text-customGray-600;
+        }
+
+        &.active {
+            @apply border-primary bg-primary  font-bold text-customGray-50;
+        }
+    }
+}
+
+.browse-button {
+    @apply bg-secondary flex h-full w-full items-center justify-center rounded-xl bg-gradient-to-r fill-customGray-700 p-7 text-center text-xl font-bold hover:from-primary hover:to-[#d91cdd]  hover:fill-customGray-50 hover:text-customGray-50 dark:fill-customGray-50;
+    @apply max-2xl:p-5 max-2xl:text-base max-lg:rounded-md max-lg:p-3 max-lg:font-normal max-sm:text-xs;
+    &__icon {
+        @apply mr-5 max-xl:mr-3 max-sm:mr-1.5;
+        svg {
+            @apply h-full w-9 max-xl:w-8 max-lg:w-7 max-sm:w-4;
+        }
+    }
+}
+
+.floating-button {
+    @apply primary-shadow flex aspect-square w-[90px] items-center justify-center rounded-full bg-primary text-3xl text-customGray-50 transition-transform hover:scale-110 max-lg:w-[60px] max-lg:text-2xl;
+}
+
+.play-button {
+    @apply flex aspect-square w-[60px] shrink-0 items-center justify-center rounded-full bg-primary pl-1 text-2xl text-white transition-transform hover:scale-110 max-lg:w-10 max-lg:pl-0.5 max-lg:text-base max-sm:w-7 max-sm:text-xs;
+}

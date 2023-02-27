@@ -1,0 +1,32 @@
+.form {
+    // .form__group
+
+    &__group {
+    }
+
+    &__uploader {
+        @apply border-b border-customGray-400 px-1 pb-3 dark:border-customPink-100;
+    }
+
+    // .form__submit
+
+    &__submit {
+        @apply flex justify-center;
+    }
+
+    // .form__button
+
+    &__button {
+        @apply mt-3 w-full max-w-[200px] px-12 py-3 text-xl font-bold max-lg:font-normal max-sm:text-sm;
+    }
+
+    // .form__actions
+
+    &__actions {
+        @apply flex justify-end space-x-5 pt-20 max-lg:justify-center max-lg:space-x-3 max-lg:pt-4;
+    }
+}
+
+@import "button";
+@import "input";
+@import "checkbox";
